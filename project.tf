@@ -9,4 +9,5 @@ resource "vercel_project" "app" {
     repo              = "aokuyama/portfolio"
     production_branch = "deploy"
   }
+  ignore_command = "bash vercel-ignore-build-step.sh"
 }
